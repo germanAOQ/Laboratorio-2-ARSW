@@ -1,5 +1,9 @@
 # Laboratorio-2-ARSW
 ## Part I - Before finishing class
+## Integrantes
+### Nicolás Ortega Limas
+### Germán Andrés Ospina Quintero
+
 ### Thread control with wait/notify. Producer/consumer
 
 1. Check the operation of the program and run it. While this occurs, run jVisualVM and     
