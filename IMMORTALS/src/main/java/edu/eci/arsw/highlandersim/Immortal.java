@@ -9,6 +9,7 @@ public class Immortal extends Thread {
 	private ImmortalUpdateReportCallback updateCallback = null;
 
 	private AtomicInteger health;
+	
 
 	private int defaultDamageValue;
 
@@ -67,16 +68,16 @@ public class Immortal extends Thread {
 
 	}
 
-	public synchronized void fight(Immortal i2) {
-
-		if (i2.getHealth() > 0) {
-			//i2.changeHealth(i2.getHealth() - defaultDamageValue);
-			i2.health.addAndGet(-defaultDamageValue);
-			this.health.addAndGet(defaultDamageValue);
-			updateCallback.processReport("Fight: " + this + " vs " + i2 + "\n");
-		} else {
-			updateCallback.processReport(this + " says:" + i2 + " is already dead!\n");
-		}
+	public void fight(Immortal i2) {
+				if (i2.getHealth() > 0) {
+					//i2.changeHealth(i2.getHealth() - defaultDamageValue);
+					i2.health.addAndGet(-defaultDamageValue);
+					this.health.addAndGet(defaultDamageValue);
+					updateCallback.processReport("Fight: " + this + " vs " + i2 + "\n");
+				} else {
+					updateCallback.processReport(this + " says:" + i2 + " is already dead!\n");
+				}
+		
 
 	}
 
