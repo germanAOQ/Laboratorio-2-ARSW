@@ -46,20 +46,20 @@ CListo
 
 7. After implementing your strategy, start running your program, and pay attention to whether it comes to a halt. If so, use the jps and jstack programs to identify why the program stopped.
 El programa se ha detenido gracias a un Deadlock.
-![Texto alternativo](Laboratorio-2-ARSW/IMMORTALS/Imagenes/Deadlock.PNG)
+![Texto alternativo](IMMORTALS\Imagenes\Deadlock.PNG)
 
 8. Consider a strategy to correct the problem identified above (you can review Chapter 15 of Java Concurrency in Practice again).
 La estrategia que escogimos para solucionar el problema fue utilizar la AtomicInteger como nuevo tipo para el atributo health correspondiente a cada Immortal.
 
 9. Once the problem is corrected, rectify that the program continues to function consistently when 100, 1000 or 10000 immortals are executed. If in these large cases the invariant begins to be breached again, you must analyze what was done in step 4.
 100 immortals:     
-![Texto alternativo](Laboratorio-2-ARSW/IMMORTALS/Imagenes/100Inmortales.PNG)
+![Texto alternativo](IMMORTALS\Imagenes\100Inmortales.PNG)
 
 1000 immortals:     
-![Texto alternativo](Laboratorio-2-ARSW/IMMORTALS/Imagenes/1000Inmortales.PNG)
+![Texto alternativo](IMMORTALS\Imagenes\1000Inmortales.PNG)
 
 10000 immortals:      
-![Texto alternativo](Laboratorio-2-ARSW/IMMORTALS/Imagenes/10000Inmortales.PNG)
+![Texto alternativo](IMMORTALS\Imagenes\10000Inmortales.PNG)
 
 10. An annoying element for the simulation is that at a certain point in it there are few living 'immortals' making failed fights with 'immortals' already dead. It is necessary to suppress the immortal dead of the simulation as they die. 
 10.1 Analyzing the simulation operation scheme, could this create a race condition? Implement the functionality, run the simulation and see what problem arises when there are many 'immortals' in it. Write your conclusions about it in the file ANSWERS.txt. 
