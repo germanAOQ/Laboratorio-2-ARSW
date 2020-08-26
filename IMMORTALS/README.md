@@ -53,13 +53,11 @@ La estrategia que escogimos para solucionar el problema fue utilizar la AtomicIn
 
 9. Once the problem is corrected, rectify that the program continues to function consistently when 100, 1000 or 10000 immortals are executed. If in these large cases the invariant begins to be breached again, you must analyze what was done in step 4.                                         
 100 immortals:     
-![](/IMMORTALS/Imagenes/100Inmortales.PNG)
-
-1000 immortals:     
-![](/IMMORTALS/Imagenes/1000Inmortales.PNG)
-
-10000 immortals:      
-![](/IMMORTALS/Imagenes/10000Inmortales.PNG)
+![](/IMMORTALS/Imagenes/100Inmortales.PNG)                        
+1000 immortals:                                    
+![](/IMMORTALS/Imagenes/1000Inmortales.PNG)                          
+10000 immortals:                                  
+![](/IMMORTALS/Imagenes/10000Inmortales.PNG)                                                          
 
 10. An annoying element for the simulation is that at a certain point in it there are few living 'immortals' making failed fights with 'immortals' already dead. It is necessary to suppress the immortal dead of the simulation as they die. 
 10.1 Analyzing the simulation operation scheme, could this create a race condition? Implement the functionality, run the simulation and see what problem arises when there are many 'immortals' in it. Write your conclusions about it in the file ANSWERS.txt. 
