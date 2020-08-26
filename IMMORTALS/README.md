@@ -46,7 +46,7 @@ CListo
 
 7. After implementing your strategy, start running your program, and pay attention to whether it comes to a halt. If so, use the jps and jstack programs to identify why the program stopped.
 El programa se ha detenido gracias a un Deadlock.
-![](IMMORTALS/Imagenes/Deadlock.png)
+![](IMMORTALS/Imagenes/Deadlock.PNG)
 
 8. Consider a strategy to correct the problem identified above (you can review Chapter 15 of Java Concurrency in Practice again).
 La estrategia que escogimos para solucionar el problema fue utilizar la AtomicInteger como nuevo tipo para el atributo health correspondiente a cada Immortal.
